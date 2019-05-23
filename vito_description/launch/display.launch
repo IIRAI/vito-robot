@@ -74,8 +74,8 @@
 
         <!-- calibration transformations -->
         <include file="$(find vito_description)/launch/fake_calibration.launch.xml"/>
-
     </group>
+
     <!-- calibration transformations -->
     <group unless="$(arg use_robot_sim)">
         <group if="$(arg use_calibration_package)">
@@ -98,7 +98,6 @@
     <!-- #### components -->
 
     <!-- controllers are launched always, since either real or simulated hardware will be present -->
-
 
     <group ns="left_arm">
         <group if="$(arg left_arm_enabled)">
