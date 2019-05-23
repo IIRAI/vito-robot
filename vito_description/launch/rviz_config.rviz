@@ -64,6 +64,15 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        ft_surface:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hand_dummy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         left_arm_1_link:
           Alpha: 1
           Show Axes: false
@@ -132,196 +141,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_clamp:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_clamp_30_90:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_flange_30:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_flange_90:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_index_distal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_index_fake_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_index_fake_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_index_fake_link3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_index_knuckle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_index_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_index_proximal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_invisible_wire_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_kuka_coupler:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_kuka_coupler_bottom:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_little_distal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_little_fake_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_little_fake_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_little_fake_link3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_little_knuckle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_little_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_little_proximal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_middle_distal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_middle_fake_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_middle_fake_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_middle_fake_link3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_middle_knuckle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_middle_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_middle_proximal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_palm_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_ring_distal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_ring_fake_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_ring_fake_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_ring_fake_link3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_ring_knuckle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_ring_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_ring_proximal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_softhand_base:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_thumb_distal_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_thumb_fake_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_thumb_fake_link3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_hand_thumb_knuckle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_hand_thumb_proximal_link:
+        left_velvet_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -395,21 +215,6 @@ Visualization Manager:
           Show Trail: false
           Value: true
         right_hand_clamp:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_clamp_30_90:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_flange_30:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_flange_90:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -588,16 +393,35 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        torso_link:
+        table_leg_0_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        torso_link_b:
+        table_leg_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        table_leg_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        table_leg_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        table_plate_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velvet_dummy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         vito_anchor:
           Alpha: 1
           Show Axes: false
@@ -698,16 +522,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.3969807624816895
+      Distance: 4.191885471343994
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.41163700819015503
-        Y: 0.10537199676036835
-        Z: 0.2861729860305786
+        X: 0.6835817098617554
+        Y: -0.2576240599155426
+        Z: 0.24275821447372437
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
