@@ -109,9 +109,8 @@
 
 <!-- PALETTA LEFT -->
    <xacro:model_velvet parent="left_arm_7_link" name="left_velvet">
-    <origin xyz="0 0 0.14" rpy="0 0 0.5235987010713441"/>   
-     <!-- <origin xyz="0 0 0.14" rpy="0 0 0"/>    -->        
-    <!-- <origin xyz="0 0 0" rpy="0 0 0"/>    -->    <!-- conf inverse kinematic è pi ultima componente -->
+    <!-- <origin xyz="0 0 0.14" rpy="0 0 0.5235987010713441"/>    -->
+    <origin xyz="0 0 0.14" rpy="0 0 0"/>           
   </xacro:model_velvet>
 
 

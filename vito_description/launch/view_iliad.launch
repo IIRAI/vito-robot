@@ -1,7 +1,7 @@
 <launch>
     <!-- LAUNCH INTERFACE -->
     <arg name="gui"                       default="false" />
-    <arg name="robot_name"                default="vito"/>
+    <arg name="robot_name"                default="vito_iliad"/>
     <arg name="use_rviz"                  default="true"/>
     <arg name="use_joint_state_publisher" default="true"/>
     <arg name="use_calibration_package"   default="true"/>
@@ -17,17 +17,17 @@
     <!-- load the full robot in robot_description, useful for visualization, collision detection and planning simultaneously -->
     <!-- the selection is only due to the hand visualization which is different in real and simulation -->
     <group if="$(arg use_robot_sim)">
-        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name)_iliad.urdf.xacro use_mimic_tag:=false"/>
+        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name).urdf.xacro use_mimic_tag:=false"/>
     </group>
     <group unless="$(arg use_robot_sim)">
-        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name)_iliad.urdf.xacro use_mimic_tag:=true"/>
+        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name).urdf.xacro use_mimic_tag:=true"/>
     </group>
 
     <group if="$(arg use_joint_state_publisher)">
         <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
             <param name="use_gui" value="$(arg gui)"/>
             <!-- listens to each part -->
-            <rosparam param="source_list">[/left_arm/joint_states,/left_hand/joint_states,/right_arm/joint_states,/right_hand/joint_states,/head/joint_states]</rosparam>
+            <rosparam param="source_list">[/left_arm/joint_states,/left_hand/joint_states,/right_arm/joint_states,/right_hand/joint_states]</rosparam>
         </node>
     </group>
 
