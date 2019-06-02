@@ -105,19 +105,15 @@
     <child link="ft_surface" />
   </joint>
 
-
-
 <!-- PALETTA LEFT -->
+<!-- the velvet tray has a 30° offset on the x axis wrt the 7th link -->
    <xacro:model_velvet parent="left_arm_7_link" name="left_velvet">
     <!-- <origin xyz="0 0 0.14" rpy="0 0 0.5235987010713441"/>    -->
-    <origin xyz="0 0 0.14" rpy="0 0 0"/>           
+    <origin xyz="0 0.07 0.121244" rpy="-0.5235987010713441 0 0"/>           
   </xacro:model_velvet>
-
 
 <link name="velvet_dummy">
 </link>
-      
-
 
 <joint name="velvet_dummy_joint" type="fixed">
       <origin xyz="0.0150 -0.0260 0.28" rpy="0 0 0.5235987010713441"/>
@@ -128,8 +124,6 @@
 <link name="hand_dummy">
 </link>
       
-
-
 <joint name="hand_dummy_joint" type="fixed">
       <origin xyz="0 0 0.2" rpy="0 0 0"/>
       <parent link="right_arm_7_link"/>

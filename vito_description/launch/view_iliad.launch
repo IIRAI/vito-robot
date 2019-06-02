@@ -4,11 +4,14 @@
     <arg name="robot_name"                default="vito_iliad"/>
     <arg name="use_rviz"                  default="true"/>
     <arg name="use_joint_state_publisher" default="true"/>
-    <arg name="use_calibration_package"   default="true"/>
-    <arg name="use_grasp_estimator"       default="false"/>
 
-    <!-- choose whether or not to start the full robot simulation -->
-    <arg name="use_robot_sim" default="true"/>
+    <!-- ______ initial pose ______ -->
+    <!-- <arg name="init_left"  default="sensor_msgs/JointState
+    {'name: ['left_arm_a1_joint', 'left_arm_a2_joint', 'left_arm_e1_joint', 'left_arm_a3_joint','left_arm_a4_joint','left_arm_a5_joint','left_arm_a6_joint'],
+    position: [0, 0, 0, 0, 0, 1, -1.5]}' " />
+    <arg name="init_right" default="sensor_msgs/JointState 
+    {'name: ['right_arm_a1_joint', 'right_arm_a2_joint', 'right_arm_e1_joint', 'right_arm_a3_joint','right_arm_a4_joint','right_arm_a5_joint','right_arm_a6_joint'],
+    position: [0, 0, 0, 0, 0, -1, 0]}' " /> -->
 
     <!-- LAUNCH IMPLEMENTATION -->
 
@@ -16,12 +19,7 @@
 
     <!-- load the full robot in robot_description, useful for visualization, collision detection and planning simultaneously -->
     <!-- the selection is only due to the hand visualization which is different in real and simulation -->
-    <group if="$(arg use_robot_sim)">
-        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name).urdf.xacro use_mimic_tag:=false"/>
-    </group>
-    <group unless="$(arg use_robot_sim)">
-        <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name).urdf.xacro use_mimic_tag:=true"/>
-    </group>
+    <param name="robot_description" command="$(find xacro)/xacro $(find vito_description)/robot/$(arg robot_name).urdf.xacro use_mimic_tag:=false"/>
 
     <group if="$(arg use_joint_state_publisher)">
         <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
@@ -38,8 +36,9 @@
         <node name="my_rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find vito_description)/launch/rviz_config.rviz" output="screen"/>
     </group>
 
-    <!-- load hardware interface and controller configurations -->
-    <rosparam command="load" file="$(find vito_description)/config/vito_controllers.yaml"/>
-    <rosparam command="load" file="$(find vito_description)/config/hardware_interfaces.yaml"/>
+    <!-- ______ PUBLISH TOPICS ______ -->
+    <!-- set the default value of the robot (to avoid starting from the singularity) -->
+    <!-- <node pkg="rostopic" type="rostopic" name="start_left"  args="pub /left_arm/joint_states  $(arg init_left)"/>
+    <node pkg="rostopic" type="rostopic" name="start_right" args="pub /right_arm/joint_states $(arg init_right)"/> -->
 
 </launch>
