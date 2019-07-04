@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot name="iliad_object_show" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="iliad_object_show" params="parent *origin">
+
+        <!-- ILIAD objects -->
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/artsoppa.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/citron_fromage.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/cylinders_gulashsoppa.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/cylinders_jacky.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/cylinders_risifrutti.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/felix.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/hallonsoppa.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/jacky_milk.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/klassiskt_potatismos.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/nyponsoppa.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/onos.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/pauluns.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/potatismos_komplett.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/senap.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/sosstark_senap.urdf.xacro"/>
+        <xacro:include filename="$(find vito_description)/robot/ILIAD_objects_urdf/unknown.urdf.xacro"/>
+
+          <!-- ILIAD objects -->
+        <xacro:artsoppa parent="world">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:artsoppa>
+        <xacro:citron_fromage parent="world">
+            <origin xyz="0.5 0 0" rpy="0 0 0"/>
+        </xacro:citron_fromage>
+        <xacro:cylinders_gulashsoppa parent="world">
+            <origin xyz="1.0 0 0" rpy="0 0 0"/>
+        </xacro:cylinders_gulashsoppa>
+        <xacro:cylinders_jacky parent="world">
+            <origin xyz="1.5 0 0" rpy="0 0 0"/>
+        </xacro:cylinders_jacky>
+        
+        <xacro:cylinders_risifrutti parent="world">
+            <origin xyz="0.0 -0.5 0" rpy="0 0 0"/>
+        </xacro:cylinders_risifrutti>
+        <xacro:felix parent="world">
+            <origin xyz="0.5 -0.5 0" rpy="0 0 0"/>
+        </xacro:felix>
+        <xacro:hallonsoppa parent="world">
+            <origin xyz="1.0 -0.5 0" rpy="0 0 0"/>
+        </xacro:hallonsoppa>
+        <xacro:jacky_milk parent="world">
+            <origin xyz="1.5 -0.5 0" rpy="0 0 0"/>
+        </xacro:jacky_milk>
+        
+        <xacro:klassiskt_potatismos parent="world">
+            <origin xyz="0.0 -1 0" rpy="0 0 0"/>
+        </xacro:klassiskt_potatismos>
+        <xacro:nyponsoppa parent="world">
+            <origin xyz="0.5 -1 0" rpy="0 0 0"/>
+        </xacro:nyponsoppa>
+        <xacro:onos parent="world">
+            <origin xyz="1 -1 0" rpy="0 0 0"/>
+        </xacro:onos>
+        <xacro:pauluns parent="world">
+            <origin xyz="1.5 -1 0" rpy="0 0 0"/>
+        </xacro:pauluns>
+        
+        <xacro:potatismos_komplett parent="world">
+            <origin xyz="0 -1.5 0" rpy="0 0 0"/>
+        </xacro:potatismos_komplett>
+        <xacro:senap parent="world">
+            <origin xyz="0.5 -1.5 0" rpy="0 0 0"/>
+        </xacro:senap>
+        <xacro:sosstark_senap parent="world">
+            <origin xyz="1 -1.5 0" rpy="0 0 0"/>
+        </xacro:sosstark_senap>
+        <xacro:unknown parent="world">
+            <origin xyz="1.5 -1.5 0" rpy="0 0 0"/>
+        </xacro:unknown>
+
+    </xacro:macro>
+
+</robot>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="cylinders_risifrutti" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="cylinders_risifrutti" params="parent *origin">
+
+        <!-- OBJECT -->
+        <joint name = "${parent}_cylinders_risifrutti_base_joint" type = "fixed">
+            <xacro:insert_block name="origin"/>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <parent link = "${parent}"/>
+            <child link = "cylinders_risifrutti"/>
+        </joint>
+
+        <!-- base link -->
+        <link name = "cylinders_risifrutti">
+            <visual>
+                <origin xyz = "0 0 0" rpy = "0 0 0"/>
+                <geometry>
+                    <mesh filename = "package://vito_description/meshes/ILIAD_objects/cylinders_risifrutti.dae"
+                          scale="0.001 0.001 0.001"/>
+                </geometry>
+            </visual>
+        </link>
+
+    </xacro:macro>
+
+</robot>

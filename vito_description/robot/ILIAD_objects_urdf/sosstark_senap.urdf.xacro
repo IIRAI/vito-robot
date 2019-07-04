@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="sosstark_senap" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="sosstark_senap" params="parent *origin">
+
+        <!-- OBJECT -->
+        <joint name = "${parent}_sosstark_senap_base_joint" type = "fixed">
+            <xacro:insert_block name="origin"/>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <parent link = "${parent}"/>
+            <child link = "sosstark_senap"/>
+        </joint>
+
+        <!-- base link -->
+        <link name = "sosstark_senap">
+            <visual>
+                <origin xyz = "0 0 0" rpy = "0 0 0"/>
+                <geometry>
+                    <mesh filename = "package://vito_description/meshes/ILIAD_objects/sosstark_senap.dae"
+                          scale="0.001 0.001 0.001"/>
+                </geometry>
+            </visual>
+        </link>
+
+    </xacro:macro>
+
+</robot>

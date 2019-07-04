@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="potatismos_komplett" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="potatismos_komplett" params="parent *origin">
+
+        <!-- OBJECT -->
+        <joint name = "${parent}_potatismos_komplett_base_joint" type = "fixed">
+            <xacro:insert_block name="origin"/>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <parent link = "${parent}"/>
+            <child link = "potatismos_komplett"/>
+        </joint>
+
+        <!-- base link -->
+        <link name = "potatismos_komplett">
+            <visual>
+                <origin xyz = "0 0 0" rpy = "0 0 0"/>
+                <geometry>
+                    <mesh filename = "package://vito_description/meshes/ILIAD_objects/potatismos_komplett.dae"
+                          scale="0.001 0.001 0.001"/>
+                </geometry>
+            </visual>
+        </link>
+
+    </xacro:macro>
+
+</robot>

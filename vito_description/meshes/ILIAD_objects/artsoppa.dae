@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2019-07-04T19:24:32</created>
+    <modified>2019-07-04T19:24:32</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <YF_dofdist sid="YF_dofdist" type="float">0</YF_dofdist>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Lamp-light" name="Lamp">
+      <technique_common>
+        <point>
+          <color sid="color">1 1 1</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">8192</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <halo_intensity sid="blnder_halo_intensity" type="float">1</halo_intensity>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">1.000799</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <compressthresh sid="compressthresh" type="float">0.04999995</compressthresh>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <filtertype sid="filtertype" type="int">0</filtertype>
+          <bufflag sid="bufflag" type="int">0</bufflag>
+          <buftype sid="buftype" type="int">2</buftype>
+          <ray_samp sid="ray_samp" type="int">1</ray_samp>
+          <ray_sampy sid="ray_sampy" type="int">1</ray_sampy>
+          <ray_sampz sid="ray_sampz" type="int">1</ray_sampz>
+          <ray_samp_type sid="ray_samp_type" type="int">0</ray_samp_type>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+          <adapt_thresh sid="adapt_thresh" type="float">0.000999987</adapt_thresh>
+          <ray_samp_method sid="ray_samp_method" type="int">1</ray_samp_method>
+          <shadhalostep sid="shadhalostep" type="int">0</shadhalostep>
+          <sun_effect_type sid="sun_effect_type" type="int">0</sun_effect_type>
+          <skyblendtype sid="skyblendtype" type="int">1</skyblendtype>
+          <horizon_brightness sid="horizon_brightness" type="float">1</horizon_brightness>
+          <spread sid="spread" type="float">1</spread>
+          <sun_brightness sid="sun_brightness" type="float">1</sun_brightness>
+          <sun_size sid="sun_size" type="float">1</sun_size>
+          <backscattered_light sid="backscattered_light" type="float">1</backscattered_light>
+          <sun_intensity sid="sun_intensity" type="float">1</sun_intensity>
+          <atm_turbidity sid="atm_turbidity" type="float">2</atm_turbidity>
+          <atm_extinction_factor sid="atm_extinction_factor" type="float">1</atm_extinction_factor>
+          <atm_distance_factor sid="atm_distance_factor" type="float">1</atm_distance_factor>
+          <skyblendfac sid="skyblendfac" type="float">1</skyblendfac>
+          <sky_exposure sid="sky_exposure" type="float">1</sky_exposure>
+          <sky_colorspace sid="sky_colorspace" type="int">0</sky_colorspace>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_effects>
+    <effect id="obj_color-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.16 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="top_color-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.64 0.24 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="bottom_color-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.16 0.08000001 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="obj_color-material" name="obj_color">
+      <instance_effect url="#obj_color-effect"/>
+    </material>
+    <material id="top_color-material" name="top_color">
+      <instance_effect url="#top_color-effect"/>
+    </material>
+    <material id="bottom_color-material" name="bottom_color">
+      <instance_effect url="#bottom_color-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="artsoppa-mesh" name="artsoppa">
+      <mesh>
+        <source id="artsoppa-mesh-positions">
+          <float_array id="artsoppa-mesh-positions-array" count="324">99.99996 0 125 99.29808 11.82732 -125 99.29808 11.82732 125 97.20227 23.4886 -125 97.20227 23.4886 125 93.74194 34.82016 -125 93.74194 34.82016 125 88.96568 45.66293 -125 88.96568 45.66293 125 82.94053 55.86468 -125 82.94053 55.86468 125 75.75108 65.28223 -125 75.75108 65.28223 125 67.49826 73.78333 -125 67.49826 73.78333 125 58.29792 81.24869 -125 58.29792 81.24869 125 48.27918 87.57349 -125 48.27918 87.57349 125 37.58272 92.66896 -125 37.58272 92.66896 125 26.35868 96.46356 -125 26.35868 96.46356 125 14.76463 98.90402 -125 14.76463 98.90402 125 2.963295 99.95609 -125 2.963295 99.95609 125 -8.879624 99.60498 -125 -8.879624 99.60498 125 -20.5979 97.85565 -125 -20.5979 97.85565 125 -32.02702 94.73264 -125 -32.02702 94.73264 125 -43.00656 90.27979 -125 -43.00656 90.27979 125 -53.38237 84.5596 -125 -53.38237 84.5596 125 -63.00882 77.65239 -125 -63.00882 77.65239 125 -71.75077 69.65512 -125 -71.75077 69.65512 125 -79.48548 60.68001 -125 -79.48548 60.68001 125 -86.1044 50.85312 -125 -86.1044 50.85312 125 -91.51461 40.31235 -125 -91.51461 40.31235 125 -95.64014 29.20567 -125 -95.64014 29.20567 125 -98.4231 17.68903 -125 -98.4231 17.68903 125 -99.82441 5.924065 -125 -99.82441 5.924065 125 -99.82441 -5.924057 -125 -99.82441 -5.924057 125 -98.4231 -17.68903 -125 -98.4231 -17.68903 125 -95.64014 -29.20567 -125 -95.64014 -29.20567 125 -91.51461 -40.31234 -125 -91.51461 -40.31234 125 -86.1044 -50.85311 -125 -86.1044 -50.85311 125 -79.48548 -60.68001 -125 -79.48548 -60.68001 125 -71.75077 -69.65511 -125 -71.75077 -69.65511 125 -63.00882 -77.65239 -125 -63.00882 -77.65239 125 -53.38237 -84.5596 -125 -53.38237 -84.5596 125 -43.00656 -90.27978 -125 -43.00656 -90.27978 125 -32.02702 -94.73264 -125 -32.02702 -94.73264 125 -20.5979 -97.85565 -125 -20.5979 -97.85565 125 -8.879624 -99.60499 -125 -8.879624 -99.60499 125 2.963295 -99.95608 -125 2.963295 -99.95608 125 14.76463 -98.90402 -125 14.76463 -98.90402 125 26.35868 -96.46356 -125 26.35868 -96.46356 125 37.58272 -92.66896 -125 37.58272 -92.66896 125 48.27918 -87.57349 -125 48.27918 -87.57349 125 58.29792 -81.24869 -125 58.29792 -81.24869 125 67.49826 -73.78333 -125 67.49826 -73.78333 125 75.75108 -65.28221 -125 75.75108 -65.28221 125 82.94053 -55.86467 -125 82.94053 -55.86467 125 88.96568 -45.66292 -125 88.96568 -45.66292 125 93.74194 -34.82016 -125 93.74194 -34.82016 125 97.20227 -23.4886 -125 97.20227 -23.4886 125 99.29808 -11.82732 -125 99.29808 -11.82732 125 99.99996 0 -125 -3.8147e-5 0 125 -3.8147e-5 0 -125</float_array>
+          <technique_common>
+            <accessor source="#artsoppa-mesh-positions-array" count="108" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="artsoppa-mesh-normals">
+          <float_array id="artsoppa-mesh-normals-array" count="432">0.9982438 0.05924057 0 0.9842307 0.17689 0 0.9842309 0.1768887 0 0.956401 0.292057 0 0.9151455 0.4031236 0 0.8610437 0.5085312 0 0.7948543 0.6068004 0 0.7175064 0.6965519 0 0.630089 0.776523 0 0.5338224 0.8455967 0 0.5338227 0.8455964 0 0.4300658 0.9027976 0 0.4300661 0.9027975 0 0.32027 0.9473264 0 0.3202701 0.9473263 0 0.2059786 0.9785566 0 0.2059787 0.9785565 0 0.08879566 0.9960499 0 0.08879566 0.9960499 0 -0.02963376 0.9995608 0 -0.147646 0.9890403 0 -0.2635874 0.9646356 0 -0.2635873 0.9646356 0 -0.3758273 0.9266898 0 -0.3758276 0.9266896 0 -0.4827926 0.8757349 0 -0.4827923 0.875735 0 -0.5829794 0.812487 0 -0.5829791 0.8124872 0 -0.6749829 0.7378335 0 -0.6749818 0.7378343 0 -0.7575129 0.6528204 0 -0.7575114 0.6528218 0 -0.8294059 0.5586467 0 -0.8294052 0.5586476 0 -0.8896571 0.4566293 0 -0.93742 0.348201 0 -0.9374195 0.3482022 0 -0.972023 0.2348856 0 -0.9929811 0.118273 0 -1 0 0 -0.9929811 -0.1182729 0 -0.972023 -0.2348856 0 -0.9374195 -0.3482024 0 -0.9374198 -0.3482012 0 -0.8896571 -0.4566293 0 -0.8294054 -0.5586472 0 -0.8294061 -0.5586463 0 -0.7575108 -0.6528227 0 -0.7575121 -0.6528212 0 -0.6749826 -0.7378337 0 -0.6749836 -0.7378329 0 -0.5829787 -0.8124876 0 -0.582979 -0.8124873 0 -0.4827923 -0.875735 0 -0.4827926 -0.8757349 0 -0.3758282 -0.9266895 0 -0.3758279 -0.9266895 0 -0.2635873 -0.9646356 0 -0.2635874 -0.9646356 0 -0.1476466 -0.9890403 0 -0.0296325 -0.999561 0 0.088795 -0.9960499 0 0.088795 -0.99605 0 0.2059787 -0.9785565 0 0.2059786 -0.9785566 0 0.3202701 -0.9473263 0 0.32027 -0.9473264 0 0.4300661 -0.9027975 0 0.4300658 -0.9027976 0 0.5338227 -0.8455964 0 0.5338224 -0.8455967 0 0.630089 -0.776523 0 0.7175071 -0.6965513 0 0.7948541 -0.6068005 0 0.8610437 -0.5085312 0 0.9151453 -0.403124 0 0.956401 -0.292057 0 0.9842309 -0.1768885 0 0.9842308 -0.1768898 0 0.9982438 -0.05924063 0 0 0 1 8.25684e-7 0 1 2.06421e-7 0 1 -4.12842e-7 0 1 -4.12842e-7 0 1 -6.19264e-7 0 1 1.54816e-7 0 1 0 0 1 -9.03092e-7 0 1 -6.19263e-7 0 1 1.34174e-6 0 1 -8.25684e-7 0 1 -8.25684e-7 0 1 6.19263e-7 0 1 -4.12842e-7 0 1 2.06421e-7 0 1 4.12842e-7 0 1 2.06421e-7 0 1 8.25684e-7 0 1 -2.06421e-7 0 1 -1.65137e-6 0 1 8.25683e-7 0 1 -4.12842e-7 0 1 1.0321e-6 0 1 0 0 1 -1.54816e-6 0 1 1.54816e-7 0 1 0 0 1 5.16052e-7 0 1 4.12842e-7 0 1 6.19263e-7 0 1 0 0 -1 8.25685e-7 0 -1 4.12842e-7 0 -1 -4.12842e-7 0 -1 -4.12842e-7 0 -1 -6.19264e-7 0 -1 1.54816e-7 0 -1 -1.54816e-6 0 -1 6.70868e-7 0 -1 1.0321e-6 0 -1 -2.06421e-7 0 -1 8.25683e-7 0 -1 -1.03211e-6 0 -1 -4.12842e-7 0 -1 4.12842e-7 0 -1 0 0 -1 2.06421e-7 0 -1 8.25684e-7 0 -1 2.06421e-7 0 -1 -2.06421e-7 0 -1 -8.25684e-7 0 -1 -4.12842e-7 0 -1 1.65137e-6 0 -1 -6.19263e-7 0 -1 0 0 -1 -1.65137e-6 0 -1 0 0 -1 1.54816e-7 0 -1 -1.54816e-7 0 -1 5.16052e-7 0 -1 2.06421e-7 0 -1 6.19263e-7 0 -1</float_array>
+          <technique_common>
+            <accessor source="#artsoppa-mesh-normals-array" count="144" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="artsoppa-mesh-vertices">
+          <input semantic="POSITION" source="#artsoppa-mesh-positions"/>
+        </vertices>
+        <triangles material="obj_color-material" count="106">
+          <input semantic="VERTEX" source="#artsoppa-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#artsoppa-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 2 1 1 1 3 1 2 2 3 2 4 2 4 3 3 3 5 3 4 3 5 3 6 3 6 4 5 4 7 4 6 4 7 4 8 4 8 5 7 5 9 5 8 5 9 5 10 5 10 6 9 6 11 6 10 6 11 6 12 6 12 7 11 7 13 7 12 7 13 7 14 7 14 8 13 8 15 8 14 8 15 8 16 8 16 9 15 9 17 9 16 10 17 10 18 10 18 11 17 11 19 11 18 12 19 12 20 12 20 13 19 13 21 13 20 14 21 14 22 14 22 15 21 15 23 15 22 16 23 16 24 16 24 17 23 17 25 17 24 18 25 18 26 18 26 19 25 19 27 19 26 19 27 19 28 19 28 20 27 20 29 20 28 20 29 20 30 20 30 21 29 21 31 21 30 22 31 22 32 22 32 23 31 23 33 23 32 24 33 24 34 24 34 25 33 25 35 25 34 26 35 26 36 26 36 27 35 27 37 27 36 28 37 28 38 28 38 29 37 29 39 29 38 30 39 30 40 30 40 31 39 31 41 31 40 32 41 32 42 32 42 33 41 33 43 33 42 34 43 34 44 34 44 35 43 35 45 35 44 35 45 35 46 35 46 36 45 36 47 36 46 37 47 37 48 37 48 38 47 38 49 38 48 38 49 38 50 38 50 39 49 39 51 39 50 39 51 39 52 39 52 40 51 40 53 40 52 40 53 40 54 40 54 41 53 41 55 41 54 41 55 41 56 41 56 42 55 42 57 42 56 42 57 42 58 42 58 43 57 43 59 43 58 44 59 44 60 44 60 45 59 45 61 45 60 45 61 45 62 45 62 46 61 46 63 46 62 47 63 47 64 47 64 48 63 48 65 48 64 49 65 49 66 49 66 50 65 50 67 50 66 51 67 51 68 51 68 52 67 52 69 52 68 53 69 53 70 53 70 54 69 54 71 54 70 55 71 55 72 55 72 56 71 56 73 56 72 57 73 57 74 57 74 58 73 58 75 58 74 59 75 59 76 59 76 60 75 60 77 60 76 60 77 60 78 60 78 61 77 61 79 61 78 61 79 61 80 61 80 62 79 62 81 62 80 63 81 63 82 63 82 64 81 64 83 64 82 65 83 65 84 65 84 66 83 66 85 66 84 67 85 67 86 67 86 68 85 68 87 68 86 69 87 69 88 69 88 70 87 70 89 70 88 71 89 71 90 71 90 72 89 72 91 72 90 72 91 72 92 72 92 73 91 73 93 73 92 73 93 73 94 73 94 74 93 74 95 74 94 74 95 74 96 74 96 75 95 75 97 75 96 75 97 75 98 75 98 76 97 76 99 76 98 76 99 76 100 76 100 77 99 77 101 77 100 77 101 77 102 77 102 78 101 78 103 78 102 79 103 79 104 79 104 80 103 80 105 80 104 80 105 80 0 80 0 0 105 0 1 0</p>
+        </triangles>
+        <triangles material="top_color-material" count="53">
+          <input semantic="VERTEX" source="#artsoppa-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#artsoppa-mesh-normals" offset="1"/>
+          <p>0 81 2 81 106 81 0 81 106 81 104 81 98 81 100 81 106 81 106 81 100 81 102 81 106 81 102 81 104 81 92 82 94 82 106 82 106 83 94 83 96 83 106 84 96 84 98 84 86 81 88 81 106 81 106 85 88 85 90 85 106 86 90 86 92 86 80 81 82 81 106 81 106 87 82 87 84 87 106 81 84 81 86 81 74 81 76 81 106 81 106 88 76 88 78 88 106 89 78 89 80 89 68 81 70 81 106 81 106 90 70 90 72 90 106 91 72 91 74 91 62 92 64 92 106 92 106 93 64 93 66 93 106 94 66 94 68 94 56 95 58 95 106 95 106 96 58 96 60 96 106 97 60 97 62 97 50 81 52 81 106 81 106 98 52 98 54 98 106 81 54 81 56 81 44 99 46 99 106 99 106 81 46 81 48 81 106 100 48 100 50 100 38 101 40 101 106 101 106 102 40 102 42 102 106 103 42 103 44 103 32 81 34 81 106 81 106 104 34 104 36 104 106 105 36 105 38 105 26 81 28 81 106 81 106 106 28 106 30 106 106 107 30 107 32 107 20 81 22 81 106 81 106 87 22 87 24 87 106 108 24 108 26 108 14 81 16 81 106 81 106 85 16 85 18 85 106 109 18 109 20 109 8 93 10 93 106 93 106 110 10 110 12 110 106 111 12 111 14 111 2 81 4 81 106 81 106 81 4 81 6 81 106 81 6 81 8 81</p>
+        </triangles>
+        <triangles material="bottom_color-material" count="53">
+          <input semantic="VERTEX" source="#artsoppa-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#artsoppa-mesh-normals" offset="1"/>
+          <p>105 112 103 112 107 112 105 112 107 112 1 112 7 112 5 112 107 112 107 112 5 112 3 112 107 112 3 112 1 112 13 113 11 113 107 113 107 114 11 114 9 114 107 115 9 115 7 115 19 112 17 112 107 112 107 116 17 116 15 116 107 117 15 117 13 117 25 112 23 112 107 112 107 118 23 118 21 118 107 112 21 112 19 112 31 112 29 112 107 112 107 119 29 119 27 119 107 120 27 120 25 120 37 112 35 112 107 112 107 121 35 121 33 121 107 122 33 122 31 122 43 112 41 112 107 112 107 123 41 123 39 123 107 124 39 124 37 124 49 125 47 125 107 125 107 112 47 112 45 112 107 126 45 126 43 126 55 127 53 127 107 127 107 128 53 128 51 128 107 112 51 112 49 112 61 129 59 129 107 129 107 130 59 130 57 130 107 131 57 131 55 131 67 112 65 112 107 112 107 132 65 132 63 132 107 133 63 133 61 133 73 134 71 134 107 134 107 135 71 135 69 135 107 136 69 136 67 136 79 137 77 137 107 137 107 138 77 138 75 138 107 139 75 139 73 139 85 112 83 112 107 112 107 118 83 118 81 118 107 140 81 140 79 140 91 112 89 112 107 112 107 116 89 116 87 116 107 141 87 141 85 141 97 112 95 112 107 112 107 142 95 142 93 142 107 143 93 143 91 143 103 112 101 112 107 112 107 112 101 112 99 112 107 112 99 112 97 112</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.481132 0.7276763 0.3054208 -0.6141704 -6.50764 0 0.8953956 0.4452714 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Lamp" name="Lamp" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Lamp-light"/>
+      </node>
+      <node id="artsoppa" name="artsoppa" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#artsoppa-mesh" name="artsoppa">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="obj_color-material" target="#obj_color-material"/>
+              <instance_material symbol="top_color-material" target="#top_color-material"/>
+              <instance_material symbol="bottom_color-material" target="#bottom_color-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
