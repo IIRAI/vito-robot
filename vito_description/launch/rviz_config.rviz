@@ -5,11 +5,9 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Status1
-        - /Grid1
         - /TF1
         - /TF1/Frames1
-      Splitter Ratio: 0.8262107968330383
+      Splitter Ratio: 0.6894586682319641
     Tree Height: 683
   - Class: rviz/Selection
     Name: Selection
@@ -65,7 +63,42 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        artsoppa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        citron_fromage:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cylinders_gulashsoppa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cylinders_jacky:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cylinders_risifrutti:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        felix:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         ft_surface:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hallonsoppa:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -74,6 +107,16 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        jacky_milk:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        klassiskt_potatismos:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         left_arm_1_link:
           Alpha: 1
           Show Axes: false
@@ -143,6 +186,26 @@ Visualization Manager:
           Show Trail: false
           Value: true
         left_velvet_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        nyponsoppa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        onos:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pauluns:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        potatismos_komplett:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -394,6 +457,16 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        senap:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sosstark_senap:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         table_leg_0_link:
           Alpha: 1
           Show Axes: false
@@ -415,6 +488,11 @@ Visualization Manager:
           Show Trail: false
           Value: true
         table_plate_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        unknown:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -442,10 +520,28 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        artsoppa:
+          Value: false
+        citron_fromage:
+          Value: false
+        cylinders_gulashsoppa:
+          Value: false
+        cylinders_jacky:
+          Value: false
+        cylinders_risifrutti:
+          Value: false
+        felix:
+          Value: false
         ft_surface:
+          Value: false
+        hallonsoppa:
           Value: false
         hand_dummy:
           Value: true
+        jacky_milk:
+          Value: false
+        klassiskt_potatismos:
+          Value: false
         left_arm_1_link:
           Value: false
         left_arm_1_link_dummy:
@@ -471,13 +567,21 @@ Visualization Manager:
         left_arm_6_link_dummy:
           Value: false
         left_arm_7_link:
-          Value: true
+          Value: false
         left_arm_7_link_dummy:
           Value: false
         left_arm_base_link:
           Value: false
         left_velvet_link:
           Value: true
+        nyponsoppa:
+          Value: false
+        onos:
+          Value: false
+        pauluns:
+          Value: false
+        potatismos_komplett:
+          Value: false
         right_arm_1_link:
           Value: false
         right_arm_1_link_dummy:
@@ -503,7 +607,7 @@ Visualization Manager:
         right_arm_6_link_dummy:
           Value: false
         right_arm_7_link:
-          Value: true
+          Value: false
         right_arm_7_link_dummy:
           Value: false
         right_arm_base_link:
@@ -586,6 +690,10 @@ Visualization Manager:
           Value: false
         right_hand_thumb_proximal_link:
           Value: false
+        senap:
+          Value: false
+        sosstark_senap:
+          Value: false
         table_leg_0_link:
           Value: false
         table_leg_1_link:
@@ -595,13 +703,15 @@ Visualization Manager:
         table_leg_3_link:
           Value: false
         table_plate_link:
-          Value: true
+          Value: false
+        unknown:
+          Value: false
         velvet_dummy:
           Value: false
         vito_anchor:
-          Value: true
-        world:
           Value: false
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: false
@@ -609,6 +719,36 @@ Visualization Manager:
       Show Names: false
       Tree:
         world:
+          artsoppa:
+            {}
+          citron_fromage:
+            {}
+          cylinders_gulashsoppa:
+            {}
+          cylinders_jacky:
+            {}
+          cylinders_risifrutti:
+            {}
+          felix:
+            {}
+          hallonsoppa:
+            {}
+          jacky_milk:
+            {}
+          klassiskt_potatismos:
+            {}
+          nyponsoppa:
+            {}
+          onos:
+            {}
+          pauluns:
+            {}
+          potatismos_komplett:
+            {}
+          senap:
+            {}
+          sosstark_senap:
+            {}
           table_plate_link:
             table_leg_0_link:
               {}
@@ -618,6 +758,8 @@ Visualization Manager:
               {}
             table_leg_3_link:
               {}
+          unknown:
+            {}
           vito_anchor:
             left_arm_base_link:
               left_arm_1_link:
@@ -766,7 +908,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: world
+    Fixed Frame: vito_anchor
     Frame Rate: 30
   Name: root
   Tools:
@@ -790,25 +932,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.971921682357788
+      Distance: 3.435640811920166
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.8846791386604309
-        Y: 0.2954033315181732
-        Z: 0.47876816987991333
+        X: 0.8270012736320496
+        Y: 1.0637662410736084
+        Z: 0.6333593130111694
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5002008676528931
+      Pitch: 0.4101998507976532
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.8927907347679138
+      Yaw: 5.530975818634033
     Saved: ~
 Window Geometry:
   Displays:

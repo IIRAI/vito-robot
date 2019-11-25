@@ -27,13 +27,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://vito_description/meshes/gazebo_assieme.stl"/>
+        <mesh filename="package://vito_description/meshes/velvet_tray.stl"/>
       </geometry>
       <material name="Vito/Silver"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://vito_description/meshes/gazebo_assieme.stl"/>
+        <mesh filename="package://vito_description/meshes/velvet_tray.stl"/>
       </geometry>
     </collision>
   </link>
