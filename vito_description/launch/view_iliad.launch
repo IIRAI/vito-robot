@@ -15,7 +15,7 @@
         <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
             <param name="use_gui" value="$(arg gui)"/>
             <!-- listens to each part -->
-            <rosparam param="source_list">[/left_arm/joint_states,/left_hand/joint_states,/right_arm/joint_states,/right_hand/joint_states]</rosparam>
+            <rosparam param="source_list">[/vito_anchor,/left_arm/joint_states,/left_hand/joint_states,/right_arm/joint_states,/right_hand/joint_states]</rosparam>
         </node>
     </group>
 

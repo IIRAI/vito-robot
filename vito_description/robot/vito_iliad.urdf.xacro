@@ -15,28 +15,77 @@
 
   <!-- show all the ILIAD objects TODO(ed): make this optional--> 
   <!-- <xacro:include filename="$(find vito_description)/robot/iliad_object_show.urdf.xacro"/> -->
+
+  <!-- show all the ILIAD objects TODO(ed): make this optional--> 
+  <!-- <xacro:iliad_object_show parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:iliad_object_show> -->
     
   <link name="world" />
   <link name="vito_anchor" />
   <link name="camera_link"/>
-  <!-- <link name="camera_rgb_optical_frame"/> -->
 
-    <!-- show all the ILIAD objects TODO(ed): make this optional--> 
-    <!-- <xacro:iliad_object_show parent="world">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </xacro:iliad_object_show> -->
+  <!-- ENVIRONMENT -->
+  <xacro:model_table name="table" 
+                     parent="world"
+                     length="0.6"
+                     width="0.8"
+                     height="0.70"
+                     plate_thickness="0.05">
+    <origin xyz="1.350 1.201 0.70" rpy="0 0 0"/>
+  </xacro:model_table>
 
-    <joint name="w_fixed" type="fixed">
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <parent link="world" />
-      <child link="vito_anchor" />
-    </joint>
+  <!-- ROBOT -->
 
-    <joint name="camera_kuka_base_joint" type="fixed">
-      <origin xyz="0.074 -0.087 0.088" rpy="-1.426 -1.539 -1.710"/>
-      <parent link="right_arm_7_link"/>
-      <child link="camera_link"/>
-    </joint>
+  <!-- floating base for the robot, chain of x-y-z-yaw joints (floating does not work) -->
+  <link name="world_1" /> 
+  <link name="world_2" />
+  <link name="world_3" />
+
+  <joint name="world_x" type="prismatic">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <limit effort="1000.0" lower="-1000" upper="10000" velocity="10000"/>
+    <axis xyz="1 0 0"/> 
+    <parent link="world" />
+    <child link="world_1" />
+  </joint>
+
+  <joint name="world_y" type="prismatic">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <limit effort="1000.0" lower="-1000" upper="10000" velocity="10000"/>
+    <axis xyz="0 1 0"/> 
+    <parent link="world_1" />
+    <child link="world_2" />
+  </joint>
+
+  <joint name="world_z" type="prismatic">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <limit effort="1000.0" lower="-1000" upper="10000" velocity="10000"/>
+    <axis xyz="0 0 1"/> 
+    <parent link="world_2" />
+    <child link="world_3" />
+  </joint>
+
+  <joint name="world_yaw" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <limit effort="1000.0" lower="-1000" upper="10000" velocity="10000"/>
+    <axis xyz="0 0 1"/> 
+    <parent link="world_3" />
+    <child link="vito_anchor" />
+  </joint>
+
+  <!-- floating base for the robot END -->
+
+  <joint name="camera_kuka_base_joint" type="fixed">
+    <origin xyz="0.074 -0.087 0.088" rpy="-1.426 -1.539 -1.710"/>
+    <parent link="right_arm_7_link"/>
+    <child link="camera_link"/>
+  </joint>
+
+  <!-- CAMERA -->
+  <xacro:asus_xtion_camera name="camera_rviz" parent="camera_link" tilt="0">
+    <origin xyz="-0.05 -0.10 -0.03" rpy="0 0 0"/>
+  </xacro:asus_xtion_camera>
   
   <!-- LEFT ARM -->
   <xacro:kuka_lwr name="left_arm" parent="vito_anchor">
@@ -96,21 +145,5 @@
     <parent link="right_arm_7_link"/>
     <child link="hand_dummy"/>
   </joint>
-
-  <!-- CAMERA -->
-  <xacro:asus_xtion_camera name="camera_rviz" parent="camera_link" tilt="0">
-    <!-- <origin xyz="0.01 0.037 0" rpy="1.5708 -1.5708 0"/> -->
-    <origin xyz="-0.05 -0.10 -0.03" rpy="0 0 0"/>
-  </xacro:asus_xtion_camera>
-
-  <!-- ENVIRONMENT -->
-  <xacro:model_table name="table" 
-                     parent="world"
-                     length="0.6"
-                     width="0.8"
-                     height="0.70"
-                     plate_thickness="0.05">
-    <origin xyz="1.350 1.201 0.70" rpy="0 0 0"/>
-  </xacro:model_table>
 
 </robot>
